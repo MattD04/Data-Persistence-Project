@@ -20,6 +20,7 @@ public class DataManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject); //The second line of code marks the MainManager GameObject attached to this script not to be destroyed when the scene changes.
+        LoadData(); // Load data when the game starts
     }
 
     [SerializeField]
